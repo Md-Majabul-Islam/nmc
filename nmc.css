@@ -1,0 +1,69 @@
+/* Use a clean font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #2c3e50;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  color: #2c3e50;
+}
+
+h2, h4 {
+  margin: 5px 0;
+  color: #34495e;
+}
+
+/* Container for links */
+.container {
+  background-color: #fefee5;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Link styling */
+.container a {
+  display: block;
+  background-color: #ffffff;
+  color: #2c3e50;
+  text-decoration: none;
+  padding: 14px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.container a:hover {
+  background-color: #3498db;
+  color: white;
+  border-color: #2980b9;
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Responsive on small screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+}
